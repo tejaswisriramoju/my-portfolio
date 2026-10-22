@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sriramoju Tejaswi – IoT & Embedded Systems</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div id="progress"></div>
+
+<div class="wrap">
+
+<header class="top">
+  <button id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">Menu</button>
+  <nav id="mainNav" aria-label="Sections">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certs">Certificates</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="theme" type="button" aria-label="Toggle light and dark theme">Theme</button>
+</header>
+
+<main>
+  <div class="hero" id="home">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">IoT & Embedded Systems Engineer</p>
+      <h1>Sriramoju Tejaswi</h1>
+      <p class="role">I build <span id="typed"></span><span class="cursor">|</span></p>
+      <p class="lede">Electronics and Communication Engineering student building IoT systems with ESP32, MQTT and ThingsBoard, plus hands-on AWS cloud and solar PV experience. Looking for an IoT or embedded systems role.</p>
+      <p class="loc">Karimnagar, Telangana, India</p>
+      <p><a class="btn" href="resume.pdf/Sriramoju%20Tejaswi_Resume.pdf" download="Sriramoju-Tejaswi-Resume.pdf">Download Resume</a></p>
+    </div>
+    <img class="avatar" src="images/profile.jpg" alt="Photo of Sriramoju Tejaswi" width="460" height="575">
+  </div>
+  
+  </div>
+
+  <div class="ask">
+    <form id="askForm" role="search">
+      <label for="q">Ask this portfolio a question</label>
+      <div class="row"><input id="q" type="search" placeholder="e.g. Which sensors have you used?" autocomplete="off"><button class="go" type="submit">Search</button></div>
+    </form>
+    <div class="chips" id="chips"></div>
+    <div id="results" aria-live="polite"></div>
+  </div>
+
+<section id="about">
+  <h2 class="eyebrow">01 / About</h2>
+  <p class="about-text">Electronics and Communication Engineering student (B.Tech, expected 2027) with hands-on IoT experience across ESP32 firmware, sensor interfacing, MQTT telemetry and ThingsBoard dashboards. Completed an IoT internship building an Edge AI-based EV charging station optimizer, with additional exposure to AWS cloud services and solar PV installation. Seeking an IoT / embedded systems role.</p>
+</section>
+
+<section id="experience"><h2 class="eyebrow">02 / Experience</h2><div id="jobs"></div></section>
+<section id="projects"><h2 class="eyebrow">03 / Projects</h2><div class="timeline project-timeline" id="projs"></div></section>
+<section id="skills">
+  <h2 class="eyebrow">04 / Skills</h2>
+  <h3 class="skills-intro">IoT and embedded systems skills built through hands-on projects.</h3>
+  <p class="skills-description">Tools and technologies I use to develop connected devices, integrate sensors, and deliver cloud-connected solutions.</p>
+  <div class="skills" id="skillGrid"></div>
+</section>
+<section id="certs"><h2 class="eyebrow">05 / Certificates</h2><ul class="certs" id="certList"></ul></section>
+<section id="education"><h2 class="eyebrow">06 / Education</h2><div id="edu"></div></section>
+
+
+<section id="contact">
+  <p class="eyebrow">07 / Contact</p>
+  <h3 class="contact-title">Let's build something useful.</h3>
+  <p class="contact-sub">I'm open to IoT and embedded systems roles, internships and collaboration on ESP32, MQTT and cloud projects.</p>
+
+  <div class="contact-grid">
+    <div class="c-card">
+      <h3>Reach out directly</h3>
+      <p class="c-text">If you'd like to talk about IoT projects, internships or collaboration, send a message here or connect through my socials.</p>
+
+      <div class="c-item"><span>Email</span><a href="mailto:tejaswi83661@gmail.com">tejaswi83661@gmail.com</a></div>
+      <div class="c-item"><span>Phone</span><a href="tel:+918341374900">+91 8341374900</a></div>
+      <div class="c-item"><span>Location</span><strong>Karimnagar, Telangana, India</strong></div>
+
+      <div class="c-social">
+        <a href="https://github.com/tejaswisriramoju" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/tejaswi-sriramoju-28786b310" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:tejaswi83661@gmail.com">Email</a>
+      </div>
+    </div>
+
+    <form class="c-card" id="contactForm">
+      <div class="c-row">
+        <label>Name<input type="text" id="cName" placeholder="Your name" required></label>
+        <label>Email<input type="email" id="cEmail" placeholder="you@example.com" required></label>
+      </div>
+      <label>Subject<input type="text" id="cSubject" placeholder="Project, role, or collaboration"></label>
+      <label>Message<textarea id="cMsg" rows="6" placeholder="Tell me a bit about what you're building or hiring for." required></textarea></label>
+      <button type="submit" class="c-send">Send Message</button>
+      <p class="c-note" id="cNote" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+</div>
+
+<dialog id="lightbox">
+  <button type="button" id="closeLb">Close</button>
+  <img id="lbImg" alt="">
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
